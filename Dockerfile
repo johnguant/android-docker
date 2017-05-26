@@ -1,7 +1,6 @@
 FROM openjdk:8
 
 RUN apt-get update && apt-get install git
-#RUN apt-get update && apt-get install -y file libc6-i386 lib32stdc++6 lib32z1 lib32ncurses5 libqt5widgets5
 
 RUN cd /opt && \
 wget --quiet --output-document=android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip && \
