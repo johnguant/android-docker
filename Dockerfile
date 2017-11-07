@@ -11,4 +11,4 @@ ENV ANDROID_HOME /opt/android-sdk
 ENV PATH ${PATH}:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:/opt/scripts
 
 RUN yes | sdkmanager --licenses
-RUN sdkmanager tools platform-tools "platforms;android-25" "build-tools;25.0.3"
+RUN sdkmanager tools platform-tools "platforms;android-27" "build-tools;26.0.2"
