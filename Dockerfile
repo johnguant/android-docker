@@ -3,7 +3,7 @@ FROM openjdk:8
 RUN apt-get update && apt-get install git
 
 RUN cd /opt && \
-wget --quiet --output-document=android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip && \
+wget --quiet --output-document=android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip && \
 unzip android-sdk.zip -d android-sdk/ && \
 rm android-sdk.zip
 
