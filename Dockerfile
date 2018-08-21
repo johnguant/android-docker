@@ -1,6 +1,8 @@
 FROM openjdk:8
 
-RUN apt-get update && apt-get install git
+RUN apt-get update && apt-get -y install git
+RUN apt-get install -y bundler
+RUN gem install fastlane
 
 RUN cd /opt && \
 wget --quiet --output-document=android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip && \
